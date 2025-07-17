@@ -22,4 +22,13 @@ const sortedSquares = function (nums) {
     return returns;
 }
 
-console.log(sortedSquares([-4, -1, 0, 3, 10])); 
+console.log(sortedSquares([-4, -1, 0, 3, 10]));
+
+// Example usage
+console.log(sortedSquares([-7, -3, 2, 3, 11])); // Output: [4, 9, 49, 121, 144]
+
+// Explanation
+// This function computes the squares of each number in the input array and returns a new array with the squares sorted in non-decreasing order.
+// It uses a two-pointer technique to efficiently compare the squares of the leftmost and rightmost elements, placing the larger square at the end of the result array.
+// Time Complexity: O(n), where n is the length of the input array nums.
+// Space Complexity: O(n), as we create a new array to store the squared values.
